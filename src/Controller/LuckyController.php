@@ -11,7 +11,7 @@ class LuckyController
     public function number(): Response
     {
         $number = random_int(0, 100);
-
+yoyoyo
         return new Response(
             '<html><body>github action aurait du être lancée: '.$number.'</body></html>'
         );
