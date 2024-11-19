@@ -7,6 +7,7 @@ config:
 hosts:
   devtest.privianet.com:
     remote_user: deployer
+    port: 1402
     deploy_path: '/home/client.domaine-achat.fr'
 
 tasks:
