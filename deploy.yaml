@@ -1,0 +1,17 @@
+import: 
+  - recipe/symfony.php
+
+config:
+  repository: 'https://github.com/Priviatech/testsymphony.git'
+
+hosts:
+  devtest.privianet.com:
+    remote_user: deployer
+    deploy_path: '/home/client.domaine-achat.fr'
+
+tasks:
+  build:
+    - run: uptime
+
+after:
+  deploy:failed: deploy:unlock
