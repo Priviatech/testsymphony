@@ -16,6 +16,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: "8.3"
+      - name: Check Syntax
+        run: find src/ -type f -name "*.php" -exec php -l {} \;
 
   deploy:
     runs-on: ubuntu-latest
